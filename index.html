@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -258,14 +258,42 @@
     align-items: start;
   }
 
-  .about-label {
+  .about-portrait {
+    position: relative;
+  }
+
+  .about-portrait img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    box-shadow: 0 12px 40px rgba(15, 30, 61, 0.15);
+    position: relative;
+    z-index: 2;
+  }
+
+  .about-portrait::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: calc(100% - 12px);
+    max-width: 150px;
+    height: 100%;
+    border: 1px solid var(--gold);
+    z-index: 1;
+  }
+
+  .about-caption {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--navy);
-    line-height: 1.3;
+    margin-top: 1.5rem;
+    padding-left: 1.25rem;
     border-left: 2px solid var(--gold);
-    padding-left: 1.5rem;
+    line-height: 1.4;
+    max-width: 220px;
   }
 
   .about-body p {
@@ -394,10 +422,12 @@
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-    .about-label {
-      font-size: 1.25rem;
-      padding-left: 1rem;
+    .about-portrait img,
+    .about-portrait::before,
+    .about-caption {
+      max-width: 100%;
     }
+    .about-portrait::before { display: none; }
     .hero-buttons { flex-direction: column; }
     .btn { width: 100%; text-align: center; }
     .phone-large { font-size: 1.85rem; }
@@ -431,8 +461,12 @@
 <!-- ============================================================ -->
 <section class="about">
   <div class="container about-grid">
-    <div class="about-label">
-      "When you've been hurt, you deserve an attorney who answers the phone."
+    <div class="about-portrait">
+      <!-- ============================================================ -->
+      <!-- Image filename matches what's uploaded to the repo            -->
+      <!-- ============================================================ -->
+      <img src="AlScanlan.png" alt="Alfred L. Scanlan Jr, Attorney at Law">
+      <p class="about-caption">"When you've been hurt, you deserve an attorney who answers the phone."</p>
     </div>
     <div class="about-body">
       <div class="eyebrow" style="color: var(--gold); margin-bottom: 1rem;">About the Firm</div>
@@ -522,4 +556,3 @@
 
 </body>
 </html>
-           
