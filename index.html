@@ -1,35 +1,525 @@
-   <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasser Law MD Links</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Wasser Law MD Pages</h1>
-        <p>Below is a list of all pages on <a href="https://wasserlawmd.com" target="_blank">Wasser Law MD</a>.</p>
-        <ul class="link-list">
-            <li><a href="https://wasserlawmd.com/" target="_blank">Slip and Fall Attorney Rockville, Maryland </a></li>
-            <li><a href="https://wasserlawmd.com/car-accident-slip-fall-attorney/rockville-maryland-car-accident-attorney" target="_blank">Car Accident Attorney Rockville, Maryland</a></li>
-            <li><a href="https://wasserlawmd.com/car-accident-slip-fall-attorney/rockville-maryland-personal-injury-attorney" target="_blank">Personal Injury Attorney Rockville, Maryland</a></li>
-            <li><a href="https://wasserlawmd.com/" target="_blank">Slip and Fall Attorney Baltimore, Maryland</a></li>
-            <li><a href="https://wasserlawmd.com/car-accident-slip-fall-attorney/rockville-maryland-car-accident-attorney" target="_blank">Car Accident Attorney Baltimore, Maryland</a></li>
-            <li><a href="https://wasserlawmd.com/car-accident-slip-fall-attorney/rockville-maryland-personal-injury-attorney" target="_blank">Personal Injury Attorney Baltimore, Maryland</a></li>
-            <!-- Add other pages as necessary -->
-        </ul>
-    </div>
-</body>
-</html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-            <script>
-    const list = document.querySelector('.link-list');
-    for (let i = 0; i < 500; i++) {
-        const clone = list.cloneNode(true);
-        document.body.appendChild(clone);
-    }
+<!-- ============================================================ -->
+<!-- EDIT THESE FOR SEO. The <title> is what shows in Google.    -->
+<!-- ============================================================ -->
+<title>Alfred L. Scanlan Jr LLC | Personal Injury Attorney | Hagerstown, MD</title>
+<meta name="description" content="Alfred L. Scanlan Jr LLC represents personal injury and motor vehicle accident clients in Hagerstown, Maryland. Free consultation. Call 301-331-1918.">
+<meta name="author" content="Alfred L. Scanlan Jr LLC">
+
+<!-- Open Graph (how the site looks when shared on Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content="Alfred L. Scanlan Jr LLC | Personal Injury Attorney">
+<meta property="og:description" content="Personal injury and motor vehicle accident representation in Hagerstown, Maryland.">
+<meta property="og:type" content="website">
+
+<!-- ============================================================ -->
+<!-- GOOGLE SEARCH CONSOLE VERIFICATION TAG GOES HERE             -->
+<!-- When you set up Search Console, paste the meta tag below     -->
+<!-- ============================================================ -->
+<!-- <meta name="google-site-verification" content="PASTE_CODE_HERE"> -->
+
+<!-- Structured data: tells Google this is a law firm -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Attorney",
+  "name": "Alfred L. Scanlan Jr LLC",
+  "description": "Personal injury and motor vehicle accident attorney serving Hagerstown, Maryland and the surrounding region.",
+  "telephone": "+1-301-331-1918",
+  "email": "ascanlan@scanlan-law.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "222 E. Oak Ridge Dr., Suite 2000",
+    "addressLocality": "Hagerstown",
+    "addressRegion": "MD",
+    "postalCode": "21742",
+    "addressCountry": "US"
+  },
+  "areaServed": ["Hagerstown", "Washington County", "Maryland"],
+  "priceRange": "Free Consultation"
+}
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+<style>
+  :root {
+    --navy: #0f1e3d;
+    --navy-deep: #081127;
+    --charcoal: #1f2937;
+    --gold: #b08d57;
+    --ivory: #faf8f3;
+    --paper: #ffffff;
+    --rule: #d4cfc4;
+    --muted: #6b7280;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: var(--charcoal);
+    background: var(--ivory);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--navy);
+  }
+
+  a { color: var(--navy); text-decoration: none; }
+  a:hover { color: var(--gold); }
+
+  /* ============ HEADER / HERO ============ */
+  .hero {
+    background: var(--navy);
+    background-image:
+      linear-gradient(180deg, var(--navy-deep) 0%, var(--navy) 100%);
+    color: var(--ivory);
+    padding: 2rem 1.5rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(176, 141, 87, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(176, 141, 87, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .nav {
+    max-width: 1100px;
+    margin: 0 auto 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ivory);
+    letter-spacing: 0.02em;
+  }
+
+  .nav-cta {
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid var(--gold);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+  }
+  .nav-cta:hover {
+    background: var(--gold);
+    color: var(--navy);
+  }
+
+  .hero-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 1rem 0 2rem;
+  }
+
+  .eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+    line-height: 1.05;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+    max-width: 18ch;
+    font-weight: 400;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+    max-width: 50ch;
+    color: rgba(250, 248, 243, 0.8);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    transition: all 0.25s ease;
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    border: 1px solid var(--gold);
+  }
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--gold);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--ivory);
+    border: 1px solid rgba(250, 248, 243, 0.3);
+  }
+  .btn-secondary:hover {
+    border-color: var(--ivory);
+    color: var(--ivory);
+  }
+
+  /* ============ SECTIONS ============ */
+  section { padding: 6rem 1.5rem; }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section-header .eyebrow {
+    color: var(--gold);
+  }
+
+  .section-header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-top: 0.75rem;
+  }
+
+  .divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin: 1.5rem auto 0;
+  }
+
+  /* ============ ABOUT ============ */
+  .about {
+    background: var(--paper);
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .about-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: var(--navy);
+    line-height: 1.3;
+    border-left: 2px solid var(--gold);
+    padding-left: 1.5rem;
+  }
+
+  .about-body p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: var(--charcoal);
+  }
+
+  /* ============ PRACTICE ============ */
+  .practice {
+    background: var(--ivory);
+  }
+
+  .practice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .practice-card {
+    background: var(--paper);
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--rule);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .practice-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+  }
+
+  .practice-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(15, 30, 61, 0.08);
+  }
+
+  .practice-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .practice-card p {
+    color: var(--muted);
+    font-size: 0.97rem;
+  }
+
+  /* ============ CONTACT ============ */
+  .contact {
+    background: var(--navy);
+    color: var(--ivory);
+  }
+
+  .contact h2 { color: var(--ivory); }
+  .contact .eyebrow { color: var(--gold); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 3rem;
+  }
+
+  .contact-block h3 {
+    color: var(--gold);
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .contact-block p, .contact-block a {
+    color: rgba(250, 248, 243, 0.85);
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .contact-block a:hover {
+    color: var(--gold);
+  }
+
+  .phone-large {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25rem;
+    color: var(--ivory) !important;
+    display: block;
+    margin: 0.5rem 0 1rem;
+    font-weight: 500;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--navy-deep);
+    color: rgba(250, 248, 243, 0.5);
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(176, 141, 87, 0.2);
+  }
+
+  footer p { margin-bottom: 0.5rem; }
+  footer .disclaimer {
+    max-width: 70ch;
+    margin: 0 auto;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: rgba(250, 248, 243, 0.4);
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 768px) {
+    .hero { padding: 1.5rem 1.25rem 4rem; }
+    .nav { margin-bottom: 3rem; }
+    .nav-cta { padding: 0.4rem 1rem; font-size: 0.85rem; }
+    section { padding: 4rem 1.25rem; }
+    .about-grid, .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .about-label {
+      font-size: 1.25rem;
+      padding-left: 1rem;
+    }
+    .hero-buttons { flex-direction: column; }
+    .btn { width: 100%; text-align: center; }
+    .phone-large { font-size: 1.85rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HERO SECTION                                                 -->
+<!-- ============================================================ -->
+<header class="hero">
+  <nav class="nav">
+    <div class="brand">Alfred L. Scanlan Jr <span style="color: var(--gold);">LLC</span></div>
+    <a href="tel:+13013311918" class="nav-cta">301-331-1918</a>
+  </nav>
+
+  <div class="hero-content">
+    <div class="eyebrow">Hagerstown, Maryland</div>
+    <h1>Personal injury <em>representation</em> when it matters most.</h1>
+    <p class="hero-sub">Dedicated counsel for those injured in motor vehicle accidents and other personal injury matters throughout Maryland. Direct attention. Diligent advocacy. Free consultation.</p>
+    <div class="hero-buttons">
+      <a href="tel:+13013311918" class="btn btn-primary">Call 301-331-1918</a>
+      <a href="#contact" class="btn btn-secondary">Request a Consultation</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- ABOUT — EDIT THE BIO BELOW                                   -->
+<!-- ============================================================ -->
+<section class="about">
+  <div class="container about-grid">
+    <div class="about-label">
+      "When you've been hurt, you deserve an attorney who answers the phone."
+    </div>
+    <div class="about-body">
+      <div class="eyebrow" style="color: var(--gold); margin-bottom: 1rem;">About the Firm</div>
+      <h2 style="font-size: 2.25rem; margin-bottom: 1.5rem;">Maryland counsel with a personal approach.</h2>
+      <!-- ============================================================ -->
+      <!-- REPLACE THIS PLACEHOLDER BIO WITH ALFRED'S ACTUAL BIO         -->
+      <!-- ============================================================ -->
+      <p>Alfred L. Scanlan Jr LLC is a Maryland law firm dedicated to representing individuals injured in motor vehicle accidents and other personal injury matters. The firm provides personalized attention to every client, with the principal attorney handling each case directly from intake through resolution.</p>
+      <p>Based in Hagerstown, the firm serves clients throughout Washington County and the broader Maryland region. Whether the matter requires negotiation with insurance carriers or vigorous representation in court, every client receives diligent, ethical advocacy and clear communication at every stage.</p>
+      <p>Consultations are always free, and there is no fee unless your case is resolved successfully.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- PRACTICE AREAS                                               -->
+<!-- ============================================================ -->
+<section class="practice">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Practice Areas</div>
+      <h2>Areas of Representation</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="practice-grid">
+      <div class="practice-card">
+        <h3>Motor Vehicle Accidents</h3>
+        <p>Representation for clients injured in automobile, truck, and motorcycle collisions, including claims involving uninsured and underinsured motorists.</p>
+      </div>
+      <div class="practice-card">
+        <h3>Personal Injury</h3>
+        <p>Advocacy for individuals harmed by the negligence of others, including premises liability, slip-and-fall, and other injury matters.</p>
+      </div>
+      <div class="practice-card">
+        <h3>Insurance Claims</h3>
+        <p>Negotiation and litigation against insurance carriers to pursue fair compensation for medical expenses, lost wages, and pain and suffering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- CONTACT                                                      -->
+<!-- ============================================================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">Get in Touch</div>
+      <h2>Schedule a Free Consultation</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-block">
+        <h3>Direct Line</h3>
+        <a href="tel:+13013311918" class="phone-large">301-331-1918</a>
+        <p style="font-size: 0.9rem; color: rgba(250,248,243,0.6);">Call or text. Available for new client inquiries.</p>
+        <h3 style="margin-top: 2rem;">Email</h3>
+        <p><a href="mailto:ascanlan@scanlan-law.com">ascanlan@scanlan-law.com</a></p>
+      </div>
+      <div class="contact-block">
+        <h3>Office</h3>
+        <p>
+          222 E. Oak Ridge Drive<br>
+          Suite 2000<br>
+          Hagerstown, Maryland 21742
+        </p>
+        <h3 style="margin-top: 2rem;">Hours</h3>
+        <p>By appointment</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                       -->
+<!-- ============================================================ -->
+<footer>
+  <p>&copy; <span id="year"></span> Alfred L. Scanlan Jr LLC. All rights reserved.</p>
+  <p class="disclaimer">
+    Attorney Advertising. The information on this website is for general informational purposes only and does not constitute legal advice. No attorney-client relationship is formed by viewing this website or contacting the firm. Prior results do not guarantee a similar outcome.
+  </p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
            
