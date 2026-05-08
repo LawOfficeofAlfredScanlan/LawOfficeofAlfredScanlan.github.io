@@ -422,10 +422,11 @@
       grid-template-columns: 1fr;
       gap: 2rem;
     }
-    .about-portrait img,
-    .about-portrait::before,
+    .about-portrait img {
+      max-width: 150px;
+    }
     .about-caption {
-      max-width: 100%;
+      max-width: 220px;
     }
     .about-portrait::before { display: none; }
     .hero-buttons { flex-direction: column; }
